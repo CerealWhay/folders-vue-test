@@ -1,5 +1,7 @@
 <template>
-  <p class="file">{{name}}</p>
+  <div class="file">
+    <a>{{name}}</a>
+  </div>
 </template>
 
 <script>
@@ -13,6 +15,14 @@ export default {
 
 <style scoped lang="scss">
 .file{
-  color: green;
+  line-height: 38px;
+  margin-left: 10px;
+  color: #333;
+  a {
+    &:hover {
+      cursor: pointer;
+      color: #467bff;
+    }
+  }
 }
 </style>
